@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BINGOO</title>
+  </head>
+  <body>
+    <section class="container-conteudo">
+      <span>BINGOO</span>
+      <div class="main">
+        <div class="enunciado">
+          <p>
+            Vamos jogar? Anote 9 numeros de 1 a 15, depois clique em "gerar
+            cartela" para sortear os números, se você acertar 6 numeros você
+            ganhou!
+          </p>
+          <br />
+          <br />
+          <label for="cartelajogador"
+            >Escolha seus 9 numeros e digite os separando-os por virgula:</label
+          >
+          <input type="text" name="cartelajogador" id="cartelajogador" />
+          <button onclick="gerarcartela()">Gerar Cartela</button>
+        </div>
+        <div class="cartela">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      <div id="resultado">Esperando sua jogada...</div>
+
+      <audio id="vencedor" src="audio/Efeito Sonoro - VENCEDOR.mp3"></audio>
+      <audio id="perdedor" src="audio/Efeito sonoro - PERDEDOR.mp3"></audio>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
